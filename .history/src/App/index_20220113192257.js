@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { AppUI } from "./AppUI";
-function useLocalStorage(itemName, initialValue) {
+function useLocalStorage(itemName) {
   const localStorageItem = localStorage.getItem(itemName);
   let parsedItem;
 
   if (!localStorageItem) {
-    localStorage.setItem(itemName, JSON.stringify(initialValue));
-    parsedItem = initialValue;
+    localStorage.setItem(itemName, JSON.stringify([]));
+    parsedItem = [];
   } else {
     parsedItem = JSON.parse(localStorageItem);
   }
@@ -19,11 +19,10 @@ function useLocalStorage(itemName, initialValue) {
     localStorage.setItem(itemName, stringifiedItem);
     setItem(newItem);
   };
-  return [item, saveItem];
 }
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage("Todos_V1", []);
+  const [todos, saveTodos] = useLocalStorage("Todos_V1");
   /* este estado va a manejar la creacion de tareas */
   const [searchValue, setSearchValue] = useState("");
   /* este estado va a setear el valor de lo escrito en el input */

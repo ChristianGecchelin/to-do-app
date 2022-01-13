@@ -20,7 +20,7 @@
   -webkit-mask: url(../assets/plus.svg);
   mask: url(../assets/plus.svg);
   mask-size: auto;
-  background: green;
+  background: red;
 }
 .button-text {
   width: 60%;

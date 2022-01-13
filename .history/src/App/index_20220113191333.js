@@ -1,29 +1,24 @@
 import { useState } from "react";
 import { AppUI } from "./AppUI";
-function useLocalStorage(itemName, initialValue) {
-  const localStorageItem = localStorage.getItem(itemName);
-  let parsedItem;
-
-  if (!localStorageItem) {
-    localStorage.setItem(itemName, JSON.stringify(initialValue));
-    parsedItem = initialValue;
-  } else {
-    parsedItem = JSON.parse(localStorageItem);
-  }
-
+function useLocalStorage() {
+  const localStorageTodos = localStorage.getItem("Todos_V1");
+  let parsedTodos;
   /* Recordar setear en useState el nuevo array con Todos (parsedTodos) */
-  const [item, setItem] = useState(parsedItem);
-
-  const saveItem = (newItem) => {
-    const stringifiedItem = JSON.stringify(newItem);
-    localStorage.setItem(itemName, stringifiedItem);
-    setItem(newItem);
+  const [todos, setTodos] = useState(parsedTodos);
+  if (!localStorageTodos) {
+    localStorage.setItem("Todos_V1", JSON.stringify([]));
+    parsedTodos = [];
+  } else {
+    parsedTodos = JSON.parse(localStorageTodos);
+  }
+  const saveTodos = (newTodos) => {
+    const stringifiedTodos = JSON.stringify(newTodos);
+    localStorage.setItem("Todos_V1", stringifiedTodos);
+    setTodos(newTodos);
   };
-  return [item, saveItem];
 }
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage("Todos_V1", []);
   /* este estado va a manejar la creacion de tareas */
   const [searchValue, setSearchValue] = useState("");
   /* este estado va a setear el valor de lo escrito en el input */

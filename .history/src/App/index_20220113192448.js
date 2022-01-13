@@ -19,11 +19,10 @@ function useLocalStorage(itemName, initialValue) {
     localStorage.setItem(itemName, stringifiedItem);
     setItem(newItem);
   };
-  return [item, saveItem];
 }
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage("Todos_V1", []);
+  const [todos, saveTodos] = useLocalStorage("Todos_V1");
   /* este estado va a manejar la creacion de tareas */
   const [searchValue, setSearchValue] = useState("");
   /* este estado va a setear el valor de lo escrito en el input */
