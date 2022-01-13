@@ -1,0 +1,28 @@
+.button-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  background: #faf8f7;
+  text-align: center;
+}
+.button {
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 25px);
+  background-image: url(../assets/plus.svg);
+  width: 50px;
+  height: 50px;
+}
+.button-text {
+  width: 60%;
+  max-width: 600px;
+  padding-top: 45px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  border: 4px solid rgb(176 187 255);
+  color: rgb(176 187 255);
+}

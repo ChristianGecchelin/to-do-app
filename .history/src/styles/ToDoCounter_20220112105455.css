@@ -1,0 +1,12 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-width: 300px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* como funciona la especifidad en css en react? */

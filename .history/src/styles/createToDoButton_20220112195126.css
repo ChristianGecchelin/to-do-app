@@ -1,0 +1,12 @@
+.button-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: #faf8f7;
+}
+.button {
+  position: absolute;
+  background-image: url(../assets/plus.svg);
+  width: 100px;
+  height: 100px;
+}

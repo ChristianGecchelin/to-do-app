@@ -1,0 +1,21 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+.item-container {
+  width: 40%;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0px;
+  padding: 15px 0;
+  border: 2px solid black;
+  border-radius: 15px;
+}

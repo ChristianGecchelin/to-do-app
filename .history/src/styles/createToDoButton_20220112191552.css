@@ -1,0 +1,7 @@
+.createToDoButton {
+  background-image: url(../assets/plus.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
