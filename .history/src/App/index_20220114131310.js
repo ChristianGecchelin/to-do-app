@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
 import { AppUI } from "./AppUI";
-import { TodoProvider } from "../TodoContext";
+import { TodoContext, TodoProvider } from "../TodoContext";
 function App() {
   return (
-    <TodoProvider>
-      <AppUI />
-    </TodoProvider>
-  );
+  <TodoProvider><AppUI /></TodoProvider>;)
 }
 
 export default App;

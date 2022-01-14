@@ -14,7 +14,7 @@ function AppUI() {
       <ToDoCounter />
       <ToDoSearch />
       <TodoContext.Consumer>
-        {({ error, loading, searchedTodos, completeTodo, deleteTodo }) => {
+        {(value) => {
           return (
             <ToDoList>
               {/* declaro tres variables, que luego van a presentar tres situaciones distintas.
