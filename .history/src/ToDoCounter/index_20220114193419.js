@@ -8,7 +8,7 @@ function ToDoCounter() {
       <div className="title-card">
         <h2 className="counter-title">
           You have completed <br />
-          {completedTodos} of {totalTodos} duties.
+          {completed} of {totalTodos} duties.
         </h2>
       </div>
       {/* como podria cambiar ese br? */}

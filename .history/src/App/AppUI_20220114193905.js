@@ -6,20 +6,10 @@ import { CreateToDoButton } from "../CreateToDoButton";
 import { ToDoItem } from "../ToDoItem";
 import { Header } from "../Header";
 import { TodoContext } from "../TodoContext";
-import { Modal } from "../Modal";
-import "./AppUI.css";
-import { TodoForm } from "../TodoForm";
 
 function AppUI() {
-  const {
-    error,
-    loading,
-    searchedTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    setOpenModal,
-  } = React.useContext(TodoContext);
+  const { error, loading, searchedTodos, completeTodo, deleteTodo } =
+    React.useContext(TodoContext);
   return (
     <>
       <Header />
@@ -29,10 +19,12 @@ function AppUI() {
       <ToDoList>
         {/* declaro tres variables, que luego van a presentar tres situaciones distintas.
         la tercera significa, si loading es false(ya cargó) y el array es vacio muestro ese mensaje */}
-        {error && <p className="alternative-text">Ups something happen...</p>}
-        {loading && <p className="alternative-text">Loading...</p>}
+        {error && (
+          <p className="alternative-text">Hubo un error en la carga...</p>
+        )}
+        {loading && <p className="alternative-text">Cargando...</p>}
         {!loading && !searchedTodos.length && (
-          <p className="alternative-text">Write a ToDo</p>
+          <p className="alternative-text">Crea tu primer ToDo</p>
         )}
 
         {searchedTodos.map((todo) => (
@@ -45,13 +37,8 @@ function AppUI() {
           />
         ))}
       </ToDoList>
-      {openModal && (
-        <Modal>
-          <TodoForm />
-        </Modal>
-      )}
 
-      <CreateToDoButton setOpenModal={setOpenModal} openModal={openModal} />
+      <CreateToDoButton />
     </>
   );
 }

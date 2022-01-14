@@ -7,26 +7,21 @@ function CreateToDoButton({ openModal, setOpenModal }) {
       setOpenModal(false);
     }
   };
-  const whatButton = (openModal) => {
-    if (!openModal) {
-      return (
-        <button onClick={onClickButton} className="button-text">
-          Add ToDO
-        </button>
-      );
-    } else {
-      return (
-        <button onClick={onClickButton} className="button-text">
-          Close
-        </button>
-      );
-    }
-  };
   return (
     <div className="button-container">
       {/* <span className="button"></span> */}
-
-      {whatButton(openModal)}
+{if (openModal=true) {
+  return(
+    <button onClick={onClickButton} className="button-text">
+    Cerrar
+  </button>
+  )
+}else{return(
+  <button onClick={onClickButton} className="button-text">
+        Añadir Tarea
+      </button>
+)}}
+      
     </div>
   );
 }

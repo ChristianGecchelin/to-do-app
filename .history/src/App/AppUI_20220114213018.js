@@ -8,7 +8,6 @@ import { Header } from "../Header";
 import { TodoContext } from "../TodoContext";
 import { Modal } from "../Modal";
 import "./AppUI.css";
-import { TodoForm } from "../TodoForm";
 
 function AppUI() {
   const {
@@ -47,7 +46,7 @@ function AppUI() {
       </ToDoList>
       {openModal && (
         <Modal>
-          <TodoForm />
+          <p>Holis</p>
         </Modal>
       )}
 

@@ -1,8 +1,6 @@
 import React from "react";
 import "./ToDoSearch.css";
-import { TodoContext } from "../TodoContext";
-function ToDoSearch() {
-  const { searchValue, setSearchValue } = React.useContext(TodoContext);
+function ToDoSearch({ searchValue, setSearchValue }) {
   /* destructuro para no hacer props.searchValue lo pongo entre llaves y solo anoto el nombre de las props que paso */
   const onSearchValueChange = (event) => {
     setSearchValue(event.target.value);
@@ -15,7 +13,7 @@ function ToDoSearch() {
         value={searchValue}
         onChange={onSearchValueChange}
       ></input>
-      {/* <button className="search-button">Complete the input to search</button> */}
+      <button className="search-button">Complete the input to search</button>
     </section>
   );
 }

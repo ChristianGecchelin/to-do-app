@@ -17,7 +17,7 @@ function CreateToDoButton({ openModal, setOpenModal }) {
     } else {
       return (
         <button onClick={onClickButton} className="button-text">
-          Close
+          Cerrar
         </button>
       );
     }

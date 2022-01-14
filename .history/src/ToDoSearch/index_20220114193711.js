@@ -15,7 +15,7 @@ function ToDoSearch() {
         value={searchValue}
         onChange={onSearchValueChange}
       ></input>
-      {/* <button className="search-button">Complete the input to search</button> */}
+      <button className="search-button">Complete the input to search</button>
     </section>
   );
 }
