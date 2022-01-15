@@ -34,15 +34,6 @@ function TodoProvider(props) {
     saveTodos(newTodos);
   };
 
-  const addTodo = (text) => {
-    const newTodos = [...todos];
-    newTodos.push({
-      completed: false,
-      text,
-    });
-    saveTodos(newTodos);
-  };
-
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
   /* !!significa es verdadero? // filtramos el array para sacar solo los que tengan la propiedad completed en true */
   const totalTodos = todos.length;
@@ -73,7 +64,7 @@ function TodoProvider(props) {
         deleteTodo,
         openModal,
         setOpenModal,
-        addTodo,
+        saveTodos,
       }}
     >
       {props.children}

@@ -18,26 +18,19 @@ function TodoForm() {
     setOpenModal(false);
   };
   return (
-    <section className="form-container">
+    <section>
       <form onSubmit={onSubmit}>
-        <label className="form-title">Write your duty</label>
+        <label>miau</label>
         <textarea
-          className="form-note"
           value={newTodoValue}
           onChange={onChange}
           placeholder="Finish the react project"
         ></textarea>
-        <div className="form-button-container">
-          <button
-            className="form-button-cancel"
-            type="button"
-            onClick={onCancel}
-          >
+        <div>
+          <button type="button" onClick={onCancel}>
             Cancel
           </button>
-          <button className="form-button-add" type="submit">
-            Add
-          </button>
+          <button type="submit">Add</button>
         </div>
       </form>
     </section>

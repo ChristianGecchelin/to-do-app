@@ -34,14 +34,14 @@ function TodoProvider(props) {
     saveTodos(newTodos);
   };
 
-  const addTodo = (text) => {
-    const newTodos = [...todos];
+const addTodo = (id)=>{
+    const newTodos =[...todos];
     newTodos.push({
-      completed: false,
-      text,
-    });
-    saveTodos(newTodos);
-  };
+        id:newDate,
+        completed:false,
+        text:
+    })
+}
 
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
   /* !!significa es verdadero? // filtramos el array para sacar solo los que tengan la propiedad completed en true */
@@ -73,7 +73,6 @@ function TodoProvider(props) {
         deleteTodo,
         openModal,
         setOpenModal,
-        addTodo,
       }}
     >
       {props.children}

@@ -20,7 +20,7 @@ function TodoForm() {
   return (
     <section className="form-container">
       <form onSubmit={onSubmit}>
-        <label className="form-title">Write your duty</label>
+        <label className="form-title">miau</label>
         <textarea
           className="form-note"
           value={newTodoValue}

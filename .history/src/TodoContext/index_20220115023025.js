@@ -37,10 +37,10 @@ function TodoProvider(props) {
   const addTodo = (text) => {
     const newTodos = [...todos];
     newTodos.push({
+      id: Date.now(),
       completed: false,
       text,
     });
-    saveTodos(newTodos);
   };
 
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
@@ -73,7 +73,6 @@ function TodoProvider(props) {
         deleteTodo,
         openModal,
         setOpenModal,
-        addTodo,
       }}
     >
       {props.children}

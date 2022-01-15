@@ -40,7 +40,6 @@ function TodoProvider(props) {
       completed: false,
       text,
     });
-    saveTodos(newTodos);
   };
 
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
