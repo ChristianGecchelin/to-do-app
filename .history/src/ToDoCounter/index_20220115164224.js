@@ -20,7 +20,7 @@ function ToDoCounter() {
         </h2>
       </div>
       {/* como podria cambiar ese br? */}
-      {whatText(totalTodos, completedTodos)}
+      <p className="counter-congrats">Good job 😎</p>
     </section>
   );
 }

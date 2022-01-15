@@ -5,6 +5,7 @@ function ToDoCounter() {
   const { totalTodos, completedTodos } = React.useContext(TodoContext);
   const whatText = (totalTodos, completedTodos) => {
     const percentageComplete = (completedTodos * 100) / totalTodos;
+    console.log(percentageComplete);
     if (percentageComplete >= 50) {
       return <p className="counter-congrats">Good job 😎</p>;
     } else {

@@ -18,9 +18,9 @@ function ToDoCounter() {
           You have completed <br />
           {completedTodos} of {totalTodos} duties.
         </h2>
+        {whatText}
       </div>
       {/* como podria cambiar ese br? */}
-      {whatText(totalTodos, completedTodos)}
     </section>
   );
 }
