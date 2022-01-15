@@ -55,7 +55,7 @@ function TodoForm() {
           >
             Cancel
           </button>
-          {whatButton(newTodoValue)}
+          {whatButton}
           {/* <button className="form-button-add" type="submit">
             Add
           </button> */}

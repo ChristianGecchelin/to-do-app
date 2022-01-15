@@ -23,13 +23,13 @@ function TodoForm() {
   const whatButton = (newTodoValue) => {
     if (!newTodoValue) {
       return (
-        <button type="submit" className="button-text-write">
+        <button type="submit" className="button-text">
           Write
         </button>
       );
     } else {
       return (
-        <button type="submit" className="button-text-add">
+        <button type="submit" className="button-text">
           Add
         </button>
       );
@@ -55,10 +55,10 @@ function TodoForm() {
           >
             Cancel
           </button>
-          {whatButton(newTodoValue)}
-          {/* <button className="form-button-add" type="submit">
+
+          <button className="form-button-add" type="submit">
             Add
-          </button> */}
+          </button>
         </div>
       </form>
     </section>

@@ -20,21 +20,6 @@ function TodoForm() {
       setOpenModal(false);
     }
   };
-  const whatButton = (newTodoValue) => {
-    if (!newTodoValue) {
-      return (
-        <button type="submit" className="button-text-write">
-          Write
-        </button>
-      );
-    } else {
-      return (
-        <button type="submit" className="button-text-add">
-          Add
-        </button>
-      );
-    }
-  };
   return (
     <section className="form-container">
       <form onSubmit={onSubmit}>
@@ -55,10 +40,10 @@ function TodoForm() {
           >
             Cancel
           </button>
-          {whatButton(newTodoValue)}
-          {/* <button className="form-button-add" type="submit">
+
+          <button className="form-button-add" type="submit">
             Add
-          </button> */}
+          </button>
         </div>
       </form>
     </section>

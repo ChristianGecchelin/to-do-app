@@ -54,11 +54,7 @@ form {
   font-size: 2rem;
   text-transform: uppercase;
 }
-.form-button-container .button-text-write {
+.button-text-write {
   background-color: red;
   color: whitesmoke;
-}
-.form-button-container .button-text-add {
-  background-color: aquamarine;
-  color: black;
 }
