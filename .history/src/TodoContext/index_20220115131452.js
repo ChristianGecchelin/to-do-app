@@ -37,7 +37,7 @@ function TodoProvider(props) {
   const addTodo = (text) => {
     const newTodos = [...todos];
     newTodos.push({
-      id: Date.now(),
+      id:Date.now()
       completed: false,
       text,
     });
