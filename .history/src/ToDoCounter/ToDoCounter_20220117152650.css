@@ -1,0 +1,39 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+}
+.title-card {
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.counter-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
+  padding: 10px 20px;
+}
+.counter-congrats-container {
+  width: 80%;
+  border: 2px solid black;
+}
+.counter-congrats {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+@media (min-width: 1000px) {
+  .counter-container {
+    width: 50%;
+  }
+}
+/* como funciona la especifidad en css en react? */

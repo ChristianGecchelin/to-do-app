@@ -1,0 +1,32 @@
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 200px;
+  text-align: center;
+  padding-bottom: 50px;
+  background: #faf8f7;
+}
+header h1 {
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  color: rgb(0, 0, 0);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  letter-spacing: 0.5rem;
+}
+header h3 {
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+/*Falta completar con tipografias y colores, imagen span*/

@@ -1,0 +1,30 @@
+.button-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  text-align: center;
+}
+
+.button-text {
+  width: 80%;
+  max-width: 600px;
+  padding: 15px 0;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  border: 0px solid #fff;
+  background-color: rgb(176 187 255);
+  border-radius: 15px;
+  color: #fff;
+}
+.button-text:hover {
+  border: 4px solid #faf8f7;
+  color: #faf8f7;
+
+  border: 4px solid rgb(176 187 255);
+}

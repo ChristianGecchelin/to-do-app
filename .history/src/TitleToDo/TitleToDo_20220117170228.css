@@ -1,0 +1,19 @@
+.container-title {
+  width: 100%;
+  height: 69px;
+  background: #fff;
+  text-align: center;
+}
+.principal-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.divisor {
+  width: 80%;
+  height: 0;
+  margin: 0 auto;
+
+  background-color: #000;
+  opacity: 0.2;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+}

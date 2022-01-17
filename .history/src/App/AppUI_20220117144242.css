@@ -1,0 +1,33 @@
+.alternative-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: darkblue;
+}
+.container-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #b1bcfa;
+  justify-content: space-between;
+  height: 20vh;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  justify-content: space-between;
+  height: 80vh;
+}
+.view-todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .view-todo-container {
+    width: 50%;
+  }
+}

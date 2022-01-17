@@ -1,0 +1,59 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-width: 300px;
+  margin: 10px auto;
+  text-align: center;
+  background: #fff;
+}
+.title-card {
+  width: 80%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.counter-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 12px 20px;
+}
+.counter-title-principal {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 12px 20px;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgba(250, 234, 177, 1);
+}
+.counter-congrats-container {
+  width: 80%;
+  height: 59px;
+  background-color: rgba(83, 221, 97, 1);
+  border-radius: 15px;
+}
+.counter-fail-container {
+  width: 80%;
+  height: 59px;
+  background-color: rgb(221, 83, 83);
+  border-radius: 15px;
+}
+.counter-response {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  padding: 12px 0px;
+  color: #fff;
+}
+
+@media (min-width: 1000px) {
+  .counter-container {
+    width: 50%;
+  }
+}
+/* como funciona la especifidad en css en react? */
