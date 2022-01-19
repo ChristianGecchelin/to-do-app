@@ -39,17 +39,17 @@ function AppUI() {
             {/* declaro tres variables, que luego van a presentar tres situaciones distintas.
         la tercera significa, si loading es false(ya cargó) y el array es vacio muestro ese mensaje */}
             {error && (
-              <li className="list-item2">
+              <li className="list-item">
                 <p className="alternative-text">Ups something happen...</p>
               </li>
             )}
             {loading && (
-              <li className="list-item2">
+              <li className="list-item">
                 <p className="alternative-text">Loading...</p>
               </li>
             )}
             {!loading && !searchedTodos.length && (
-              <li className="list-item2">
+              <li className="list-item">
                 <p className="alternative-text">Write a ToDo</p>
               </li>
             )}
